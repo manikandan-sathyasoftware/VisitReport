@@ -1,0 +1,256 @@
+
+
+<!-- main -->
+<main class="my-20 lg:my-40">
+    <section class="">
+        <div class="container mx-auto px-5 lg:px-10">
+            <span class="text-xl md:text-2xl font-bold">Create Visitor Pass</span>
+        </div>
+    </section>
+
+    <section class="mt-5 bg-white">
+        <div class="container mx-auto">
+            <div class="w-11/12 mx-auto p-3 lg:p-5 shadow-lg rounded lg:rounded-3xl">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4">
+                    <div>
+                        <label for="category" class="block text-gray-600 text-sm font-medium mb-2">Category <span
+                                class="text-red-500">*</span></label>
+                        <select id="category" name="category"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                            <option value="sales">Guest</option>
+                            <option value="support">Dealer</option>
+                            <option value="marketing">Supplier - Discussion</option>
+                            <option value="other">Group company representives</option>
+                            <option value="other">Student</option>
+                            <option value="other">Consaltant</option>
+                            <option value="other">Banker</option>
+                            <option value="other">Faculities</option>
+                            <option value="other">Interview candidate</option>
+                            <option value="other">New joinee</option>
+                            <option value="other">Service Engineer</option>
+                            <option value="other">Supplier for Installation (After safety Approval)</option>
+                            <option value="other">Press</option>
+                            <option value="other">Govt officil</option>
+                            <option value="other">Auditor</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Vendor" class="block text-gray-600 text-sm font-medium mb-2">Vendor / Dealer
+                            Code</label>
+                        <select id="Vendor" name="Vendor"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Visitor" class="block text-sm font-medium text-gray-600 mb-1">Visitor
+                            Organization</label>
+                        <input type="text" id="Visitor" name="Visitor" class="mt-1 p-2 w-full border rounded-md"
+                            placeholder="Enter">
+                    </div>
+                    <div>
+                        <label for="Vendor" class="block text-gray-600 text-sm font-medium mb-2">Place to Visit <span
+                                class="text-red-500">*</span> </label>
+                        <select id="Vendor" name="Vendor"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                    <div>
+                        <label for="Department" class="block text-gray-600 text-sm font-medium mb-2">Proceeding to
+                            Department<span class="text-red-500 ml-2">*</span></label>
+                        <select id="Department" name="Department"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Section" class="block text-gray-600 text-sm font-medium mb-2">Proceeding to
+                            Section<span class="text-red-500 ml-2">*</span></label>
+                        <select id="Section" name="Section"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Visit" class="block text-gray-600 text-sm font-medium mb-2">Purpose of Visit<span
+                                class="text-red-500 ml-2">*</span></label>
+                        <select id="Visit" name="Visit"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="md:flex justify-between mt-5">
+                    <div class="w-full md:w-2/12 mb-3 lg:mb-0 lg:w-1/6 mr-2">
+                        <label for="dateInput" class="block text-gray-600 text-sm font-medium mb-2">From Date <span
+                                class="text-red-500">*</span></label>
+                        <input type="date" id="dateInput" name="Date" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+                    <div class="w-full md:w-2/12 mb-3 lg:mb-0 lg:w-1/6 mr-2">
+                        <label for="dateInput" class="block text-gray-600 text-sm font-medium mb-2">To Date<span
+                                class="text-red-500 ml-2">*</span></label>
+                        <input type="date" id="dateInput" name="Date" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+                    <div class="w-full md:w-2/12 mb-3 lg:mb-0 lg:w-1/6 mr-2">
+                        <label for="timeInput" class="block text-gray-600 text-sm font-medium mb-2">In Time <span
+                                class="text-red-500 ml-2">*</span></label>
+                        <input type="time" id="timeInput" name="Time" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+                    <div class="w-full md:w-2/12 mb-3 lg:mb-0 lg:w-1/6 mr-2">
+                        <label for="timeInput" class="block text-gray-600 text-sm font-medium mb-2">Out Time<span
+                                class="text-red-500 ml-2">*</span></label>
+                        <input type="time" id="timeInput" name="outTime" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+                    <div class="w-full md:w-4/12 mb-3 lg:mb-0 lg:w-2/6">
+                        <label for="remark" class="flex text-gray-600 text-sm font-medium mb-2">Remarks<span
+                                class="text-sm ml-auto">Max 100 characters</span></label>
+                        <input type="text" id="remark" name="remark" class="mt-1 p-2 w-full border rounded-md"
+                            placeholder="Enter remarks">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Table-->
+    <section class="mt-10 ">
+        <div class="rounded-lg shadow hidden md:block">
+            <table class="w-[90%] mx-auto">
+                <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Name</th>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Mobile No.</th>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Electronic Gadgets</th>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Other Gadgets</th>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Lunch <span>Coupen
+                                Bal:213/300</span></th>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Add to directory</th>
+                        <th class="w-2/10 p-3 text-sm font-semibold tracking-wide text-left">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="bg-white">
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <input type="text" id="" name="" class="mt-1 p-2 w-full border rounded-md"
+                                placeholder="Enter Name..">
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <input type="number" id="" name="" class="mt-1 p-2 w-full border rounded-md"
+                                placeholder="Enter Mobile.No..">
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <select id="Gadget" name="Gadget"
+                                class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                                <option value="-">Select</option>
+                            </select>
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <input type="text" id="" readonly="true" name="" class="mt-1 p-2 w-full border rounded-md"
+                                placeholder="">
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <label class="toggle" for="myToggle">
+                                <input class="toggle__input" name="" type="checkbox" id="myToggle">
+                                <div class="toggle__fill"></div>
+                            </label>
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <label class="toggles" for="myToggles">
+                                <input class="toggle__inputs" name="" type="checkbox" id="myToggles">
+                                <div class="toggle__fills"></div>
+                            </label>
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="hidden md:block container mx-auto">
+            <div class="ml-10 pl-10">
+                <button
+                    class="border rounded-md shadow-md border-blue-900 px-3 py-2 mt-10 font-semibold text-md text-blue-900 focus:px-4 focus:py-3 focus:shadow-xl hover:bg-blue-300 focus:font-bold"><span
+                        class="mr-2 font-semibold text-xl ho text-blue-900">+</span>Add person</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 bg-white md:hidden">
+        <div class="container mx-auto">
+            <div class="w-11/12 mx-auto p-3 lg:p-5 shadow-lg rounded lg:rounded-3xl">
+                <div class="grid grid-cols-1 gap-4 mt-4">
+                    <div class="ml-auto">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <label for="name" class="block text-gray-600 text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="" name="" class="mt-1 p-2 w-full border rounded-md" placeholder="Enter">
+                    </div>
+                    <div>
+                        <label for="Vendor" class="block text-gray-600 text-sm font-medium mb-2">Mobile No.</label>
+                        <input type="number" id="" name="" class="mt-1 p-2 w-full border rounded-md"
+                            placeholder="Enter">
+                    </div>
+                    <div>
+                        <label for="Gadget" class="block text-sm font-medium text-gray-600 mb-1">Electronic
+                            Gatgets</label>
+                        <select id="Gadget" name="Gadget"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                            <option value="-">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Vendor" class="block text-gray-600 text-sm font-medium mb-2">Other Gatgets</label>
+                        <input type="text" id="" readonly="true" name="" class="mt-1 p-2 w-full border rounded-md"
+                            placeholder="">
+                    </div>
+                    <div class="flex">
+                        <label for="Vendor" class="block text-gray-600 text-sm font-medium mb-2">Lunch <span>Coupen
+                                Bal:213/300</span></label>
+                        <label class="toggle ml-auto" for="myToggle">
+                            <input class="toggle__input" name="" type="checkbox" id="myToggle">
+                            <div class="toggle__fill"></div>
+                        </label>
+                    </div>
+                    <div class="flex">
+                        <label for="Vendor" class="block text-gray-600 text-sm font-medium mb-2">Add to
+                            directory</label>
+                        <label class="toggle ml-auto" for="myToggle">
+                            <input class="toggle__input" name="" type="checkbox" id="myToggle">
+                            <div class="toggle__fill"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="container mx-auto">
+                    <div class="">
+                        <button
+                            class="border rounded-md shadow-md border-blue-900 px-3 py-2 mt-10 font-semibold text-md text-blue-900 focus:px-4 focus:py-3 focus:shadow-xl hover:bg-blue-300 focus:font-bold"><span
+                                class="mr-2 font-semibold text-xl ho text-blue-900">+</span>Add person</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--Footer-->
+
